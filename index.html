@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Online Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚌 Bus Online Reservation</h1>
+        <p>Book your bus ticket easily</p>
+    </header>
+
+    <main class="container">
+        <h2>Search Buses</h2>
+
+        <form id="searchForm">
+            <label for="from">From</label>
+            <select id="from" required>
+                <option value="">Select departure</option>
+                <option>Chennai</option>
+                <option>Coimbatore</option>
+                <option>Madurai</option>
+                <option>Tiruppur</option>
+            </select>
+
+            <label for="to">To</label>
+            <select id="to" required>
+                <option value="">Select destination</option>
+                <option>Chennai</option>
+                <option>Coimbatore</option>
+                <option>Madurai</option>
+                <option>Tiruppur</option>
+            </select>
+
+            <label for="travelDate">Journey Date</label>
+            <input type="date" id="travelDate" required>
+
+            <button type="submit">Search Buses</button>
+        </form>
+
+        <p id="message" role="status"></p>
+        <section id="busResults"></section>
+
+        <section id="bookingSection" hidden>
+            <h2>Passenger Details</h2>
+            <p id="selectedBus"></p>
+
+            <form id="bookingForm">
+                <label for="passengerName">Passenger Name</label>
+                <input type="text" id="passengerName" required>
+
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}"
+                       maxlength="10" placeholder="10-digit number" required>
+
+                <label for="seats">Number of Seats</label>
+                <select id="seats" required>
+                    <option value="1">1 Seat</option>
+                    <option value="2">2 Seats</option>
+                    <option value="3">3 Seats</option>
+                    <option value="4">4 Seats</option>
+                </select>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+
+        <section id="confirmation" aria-live="polite"></section>
+        <section id="myBookings">
+    <h2>My Bookings</h2>
+    <div id="savedBookings"></div>
+</section>
+    </main>
+
+    <footer>
+        <p>Bus Online Reservation System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

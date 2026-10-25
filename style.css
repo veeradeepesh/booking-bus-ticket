@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #222;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+h2 {
+    color: #123c69;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #087f5b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #066849;
+}
+
+.bus-card {
+    margin-top: 15px;
+    padding: 16px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    background: #fafcff;
+}
+
+.bus-card h3 {
+    margin-top: 0;
+    color: #123c69;
+}
+
+.bus-card p {
+    line-height: 1.5;
+}
+
+#message {
+    color: #b42318;
+    font-weight: bold;
+}
+
+#confirmation {
+    margin-top: 20px;
+    color: #087f5b;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 94%;
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
